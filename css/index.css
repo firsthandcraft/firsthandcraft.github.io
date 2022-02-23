@@ -15,12 +15,28 @@
     0%{left: -40%;}
     100%{left: 0%;}
     }
+@keyframes scrollx{
+    0%{transform: translateY(0);}
+    /* 50%{transform: translateY(-50px);} */
+    100%{transform: translateY(-580px);}
+}
+@keyframes scrollp{
+    0%{transform: translateY(0);}
+    /* 50%{transform: translateY(-50px);} */
+    100%{transform: translateY(-320px);}
+}
+@keyframes scrollm{
+    0%{transform: translateY(0);}
+    /* 50%{transform: translateY(-50px);} */
+    100%{transform: translateY(-260px);}
+}
 @font-face{
     font-family: 'webfont01';
     src:
     url('../font/LatoRegular.ttf')format('truetype'),
     url('../font/LatoBold.ttf')format('truetype');
 }
+
 /* 공통 */
 .hide{
     width: 0; height: 0;
@@ -761,13 +777,18 @@ main{
     height: 100%;
 }
 /* 미술관 사이트 마우스 오버 */
+
+
+.museuma{
+    width: 713px;
+}
 .web{
     position: relative;
 }
 .pad{
     position: absolute;
     top:110px;
-    left: 500px;
+    left: 380px;
 }
 .phone{
     position: absolute;
@@ -775,31 +796,38 @@ main{
     left: 0px;
 }
 .museumovera{
-    width: 542px;
-    height: 244px;
+    width: 457px;
+    height: 271px;
     overflow: hidden;
     position: absolute;
-    top: 30px;
-    left: 91px;
+    top: 25px;
+    left: 82px;
 }
 .museumoverb{
-    width: 542px;
-    height: 244px;
+    width: 217px;
+    height: 288px;
     overflow: hidden;
     position: absolute;
-    top: 30px;
-    left: 91px;
+    top: 167px;
+    left: 422px;
 }
 .museumoverc{
-    width: 542px;
-    height: 244px;
+    width: 87px;
+    height: 159px;
     overflow: hidden;
     position: absolute;
-    top: 30px;
-    left: 91px;
+    top: 298px;
+    left: 28px;
 }
-.imageslide .jjsmall a>div>img{
-    width:100%;
+.museumovera>img{
+    width: 542px;
+    animation: scrollx 5s linear infinite alternate ;
+}
+.museumoverb>img{
+    animation: scrollp 5s linear infinite alternate ;
+}
+.museumoverc>img{
+    animation: scrollm 5s linear infinite alternate ;
 }
 
 /* small */
