@@ -3,7 +3,8 @@
 자기소개 퍼블리싱 사이트 
 </br>
 
-<img w"width="600" height="400" alt="allhandcraft" src="https://user-images.githubusercontent.com/97497153/222352610-8ec17a4a-2cf2-4e04-8b2f-994edc257eac.png">
+<img "width="600" height="400" alt="allhandcraft" src="https://user-images.githubusercontent.com/97497153/222352889-ee3c9e2e-cd34-431a-98f2-47a125165c02.png">
+
 
 ## :bulb:서비스 및 프로젝트 소개
 
