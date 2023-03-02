@@ -275,6 +275,7 @@ aside .subtext>a{
 main{
     width: 100%;
 }
+.project10{display:none;}
 /* --------------------------------------------- */
 /* box01 */
 #box01{
@@ -446,9 +447,10 @@ main{
    justify-content: center;
 }
 #box02>article>.box02big>.box02small>.icon li{
+
     width: 20%;
     height: 200px;
-    position: relative;
+   
     /* float: left; */
 }
 #box02>article>.box02big>.box02small>.icon li img{
@@ -461,7 +463,7 @@ main{
     width: 200px;
     height: 200px;
     border-radius: 50%;
-    display: block;
+    justify-content:center;align-items:center;
     position: absolute;
     left: 50%;
     top: 50%;
@@ -470,7 +472,7 @@ main{
     color: #4e2c14;
     margin: -120px 0 0 -100px;
     background: radial-gradient(circle, #efeae3c2 5%, #4e2c1400 60%);
-    display: none;
+    display: flex;
 }
 
 /* 3. 설명글 */
@@ -821,12 +823,13 @@ main{
 }
 .museumovera>img{
     width: 542px;
-    animation: scrollx 5s linear infinite alternate ;
 }
-.museumoverb>img{
+.scrollx{animation: scrollx 5s linear infinite alternate ;
+}
+.scrollp{
     animation: scrollp 5s linear infinite alternate ;
 }
-.museumoverc>img{
+.scrollm{
     animation: scrollm 5s linear infinite alternate ;
 }
 

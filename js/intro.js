@@ -140,11 +140,16 @@ $(document).ready(function(){
         return false;
     });
     // #box02 마우스 오버
+    $('#box02>article>.box02big>.box02small>.icon li span').css("opacity","0")
     $('#box02>article>.box02big>.box02small>.icon li').mouseover(function(){
-        $('#box02>article>.box02big>.box02small>.icon li span').stop().fadeIn();
+        $(this).find("span").stop().animate({
+            "opacity":"1",
+        },1000);
     });
     $('#box02>article>.box02big>.box02small>.icon li').mouseleave(function(){
-        $('#box02>article>.box02big>.box02small>.icon li span').stop().fadeOut();
+        $(this).find("span").stop().animate({
+            "opacity":"0"
+        },1000);
     });
 
    
@@ -172,8 +177,18 @@ $(document).ready(function(){
         $('#box03>article>.text dl.design').show();
         return false;
     });
-
-    // 자바로 hover시 도형 투명도 1로 바꾸기
+    //이미지 스크롤 애니 메이션 
+    $('.jjsmall>li:first-child').mouseover(function(){
+        $(".museumovera>img").addClass("scrollx")
+        $(".museumoverb>img").addClass("scrollp")
+        $(".museumoverc>img").addClass("scrollm")
+    });
+    $('.jjsmall>li:first-child').mouseleave(function(){
+        $(".museumovera>img").removeClass("scrollx")
+        $(".museumoverb>img").removeClass("scrollp")
+        $(".museumoverc>img").removeClass("scrollm")
+	});
+    //  hover시 도형 투명도 1로 바꾸기
     $('#box03>article>.circle ul>li.de>a').mouseover(function(){
         $('#box03>article>.circle>.cordingimg').fadeOut(1600);
     });
@@ -217,7 +232,7 @@ $(document).ready(function(){
             //      $('#box04 .box04big>ul>li>.jjsmall').css('margin-left',0);
             // })
             // },3000)	
-
+            
             // HC이미지 슬라이드
             var hclegth = 4;  
             $('#box04 .hcsmall').css('width',bigSize*hclegth);
