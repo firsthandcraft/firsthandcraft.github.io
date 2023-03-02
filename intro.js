@@ -1,6 +1,5 @@
 $(document).ready(function(){
-
-    // aside 마우스 오버시 글씨 나타나기
+    // --------aside 마우스 오버시 글씨 나타나기--------//
     $('aside#submenu>ul>li').mouseover(function(){
 		var index = $(this).index();
 		$('.subtext').eq(index).stop().fadeIn();
@@ -11,29 +10,23 @@ $(document).ready(function(){
 		$('.subtext').stop().fadeOut();
         $('aside#submenu>ul>li>a>span').slideUp().css('border-color','#4e2c14');
 	});
-
-    //aside click scroll
+    //--------aside click scroll--------//
     let asideH = $('#submenu').height();
-    // console.log(asideH);
     let asideMtop=(asideH)/2;
-    // console.log(asideMtop);
     $('#submenu').css('margin-top','-'+asideMtop+'px');
-
     $('#submenu>ul>li>a').on('click',function(){
-    // css정리 
+    // --------css정리 --------//
     let secPos = $(this).attr('href');
     let headerH = $('#headerwrap').innerHeight();
     console.log(secPos,headerH);
     let sec = $(secPos).position().top;
-    console.log(sec);
-
-    //aside animation 
+    //--------aside animation --------//
     $('html, body').stop().animate({
       scrollTop:sec
     },1200);
     return false;
     });
-    // 
+    // --------
     $('#submenu>ul>li:first>a').addClass('on');
     $(window).on('scroll',function(e){
         let headerH = $('#headerwrap').innerHeight();
@@ -110,7 +103,7 @@ $(document).ready(function(){
 
 
 
-    // box02 abiout  tabmenu
+    // --------box02 about  tabmenu--------//
     $('#box02 ul.icon>li').eq(this).addClass('on');
     $('#box02 ul.icon>li').click(function(){
         var index = $(this).index();
@@ -121,7 +114,7 @@ $(document).ready(function(){
         $('#box02 ul.icon>li').eq(index).addClass('on');
         return false;
     });
-     // about 이미지 슬라이드
+     //-------- about 이미지 슬라이드--------//
      $('#box02 .leftbt>a').on('click',function(e){
         $('.icon>li:last').prependTo('.icon');
         $('.substance>li:last').prependTo('.substance');
@@ -139,7 +132,7 @@ $(document).ready(function(){
         $('#box02 .substance>li').eq(index).show();
         return false;
     });
-    // #box02 마우스 오버
+    //-------- #box02 마우스 오버--------//
     $('#box02>article>.box02big>.box02small>.icon li').mouseover(function(){
         $('#box02>article>.box02big>.box02small>.icon li span').stop().fadeIn();
     });
@@ -149,7 +142,7 @@ $(document).ready(function(){
 
    
 
-    // box03 skills tabmenu
+    // --------box03 skills tabmenu--------
     $('#box03>article>.text>.mini>li>a').eq(0).addClass('on');
     $('#box03>article>.text>.mini>li').click(function(){
         var index = $(this).index();
@@ -159,10 +152,7 @@ $(document).ready(function(){
         $('#box03>article>.text>.mini>li>a').eq(index).addClass('on');
         return false;
     });
-
     $('#box03>article .title>ul>li:not(.de)').click(function(){
-        // let tc = $(this).attr('class')
-        // console.log(tc);
         $('#box03>article>.text dl.design').hide();
         $('#box03>article>.text dl.cording').show();
         return false;
@@ -173,7 +163,7 @@ $(document).ready(function(){
         return false;
     });
 
-    // 자바로 hover시 도형 투명도 1로 바꾸기
+    // --------자바로 hover시 도형 투명도 1로 바꾸기--------
     $('#box03>article>.circle ul>li.de>a').mouseover(function(){
         $('#box03>article>.circle>.cordingimg').fadeOut(1600);
     });
@@ -189,8 +179,8 @@ $(document).ready(function(){
     
 
 
-    // web box04 works 
-    // tab메뉴
+    // -------- box04 works --------//
+    // --------tab메뉴--------//
     $('#box04 .tabname>li').eq(0).addClass('on');
     $('#box04 .tabname>li').click(function(){
         var index = $(this).index();
@@ -200,13 +190,10 @@ $(document).ready(function(){
         $('#box04 .tabname>li').eq(index).addClass('on');
         return false;
      });
-    
-
-    //  이미지 슬라이드
+    //  --------이미지 슬라이드--------//
     let wWindow = $(window).width();
     if(wWindow>=980){
             var bigSize = $('#box04 .imageslide>li>ul>li').width();
-            console.log(bigSize);
             //jj이미지슬라이드   
             var jjlegth = 4;
             $('#box04 .jjsmall').css('width',bigSize*jjlegth);
@@ -228,7 +215,6 @@ $(document).ready(function(){
             })
             },3000)	
         }
-
         else if(wWindow<580){
                // nav mobile 사이즈 줄 나오게
             $('nav>ul>li').mouseover(function(){
@@ -239,12 +225,10 @@ $(document).ready(function(){
                 $('nav>ul>li>img').stop().fadeOut(200);
             });
             $('#box02 .box02small>h4').fadeOut(7000);
-            
         }else {
             // console.log('tabletsize=none if문');
         };
-
-    // 오른쪽 왼쪽 화살표 움직이기
+    // --------오른쪽 왼쪽 화살표 움직이기--------//
     $('#box04 .leftbt>a').on('click',function(e){
         $('.hcsmall>li:last').prependTo('.hcsmall');
         return false;

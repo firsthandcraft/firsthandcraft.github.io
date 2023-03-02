@@ -178,16 +178,16 @@ $(document).ready(function(){
         return false;
     });
     //이미지 스크롤 애니 메이션 
-    $('.jjsmall>li:first-child').mouseover(function(){
-        $(".museumovera>img").addClass("scrollx")
-        $(".museumoverb>img").addClass("scrollp")
-        $(".museumoverc>img").addClass("scrollm")
-    });
-    $('.jjsmall>li:first-child').mouseleave(function(){
-        $(".museumovera>img").removeClass("scrollx")
-        $(".museumoverb>img").removeClass("scrollp")
-        $(".museumoverc>img").removeClass("scrollm")
-	});
+    // $('.jjsmall>li:first-child').mouseover(function(){
+    //     $(".museumovera>img").addClass("scrollx")
+    //     $(".museumoverb>img").addClass("scrollp")
+    //     $(".museumoverc>img").addClass("scrollm")
+    // });
+    // $('.jjsmall>li:first-child').mouseleave(function(){
+    //     $(".museumovera>img").removeClass("scrollx")
+    //     $(".museumoverb>img").removeClass("scrollp")
+    //     $(".museumoverc>img").removeClass("scrollm")
+	// });
     //  hover시 도형 투명도 1로 바꾸기
     $('#box03>article>.circle ul>li.de>a').mouseover(function(){
         $('#box03>article>.circle>.cordingimg').fadeOut(1600);
