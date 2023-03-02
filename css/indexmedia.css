@@ -60,10 +60,17 @@
     width: 1200px;
     margin: -260px 0 0 -600px;
 }
-/* .imageslide>li>ul img {
-    width: 90%;
-    height: 90%;
-} */
+.museumovera:hover>img{
+    width: 542px;
+    animation: scrollx 5s linear infinite alternate ;
+}
+.museumoverb:hover>img{
+    animation: scrollp 5s linear infinite alternate ;
+}
+.museumoverc:hover>img{
+    animation: scrollm 5s linear infinite alternate ;
+}
+
 /* box05 */
 .etcworks{
     width: 1200px;
