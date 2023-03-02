@@ -2,7 +2,7 @@
 
 자기소개 퍼블리싱 사이트 
 </br>
- <img src="https://firsthandcraft.github.io/img/allhadcraft.png"width="600" height="400">
+ <img src="../img/allhadcraft.png"width="600" height="400">
 
 ## :bulb:서비스 및 프로젝트 소개
 
