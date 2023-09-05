@@ -11,6 +11,10 @@
 
 **`handcraftproject`** 는 작성이의 자기소개 사이트 입니다. 퍼블리셔, 웹 디자이너의 취업에 적합한 요구와 작성이의 장점 및 특징을 조사하여 취업하고자 하는 회사에 어필을 할수 있도록 기획했습니다. 
 
+## 📖:기획서
+[개인소개사이트_박소영.pdf](https://github.com/firsthandcraft/handcraftProject/files/12517583/default.pdf)
+
+
 ## :wrench: 사용 기술 스택
 - Html
 - CSS
